@@ -32,11 +32,7 @@ return currentValue + ' (' + index + ')';
 
 // Output the new array values and keys
 list.forEach(function(e) {
-<<<<<<< HEAD
-return console.log(e);
-=======
- console.log(e);
->>>>>>> master
-});
+  return console.log(e);
+ });
 
 // End program
