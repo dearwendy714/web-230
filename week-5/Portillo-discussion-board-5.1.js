@@ -38,3 +38,19 @@ fr (var [key, value] of sayings) {
 sayings.clear();
 sayings.size; // 0
 
+
+// Set Object
+
+var mySet = new Set();
+mySet.add(1);
+mySet.add(some text');
+myset.add('foo');
+
+mySet.has(1); // true
+mySet.delete('foo');
+mySet.size; // 2
+
+for (let item of mySet) console.log(item);
+// 1
+// "some text"
+
