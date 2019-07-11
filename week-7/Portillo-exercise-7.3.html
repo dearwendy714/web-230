@@ -1,0 +1,62 @@
+<!--
+============================================
+ Title:  Client Side JavaScript-7.3.js
+ Modified By: Wendy Portillo
+ Date:   July 10, 2019
+ Description: Client Side Java Script
+===========================================
+-->
+
+<script type="text/javascript">
+  function display(firstName, lastName, assignment){
+    let output = '\n' + firstName + ' ' + lastName + '\n' + assignment + '\nDate: ' +
+    new Date().toLocaleDateString('en-US')
+
+    return output
+  }
+
+  // Outputs the header to the console
+  console.log(display("Wendy", "Portillo", "Exercise 7.1") + '\n');
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 7.3</title>
+
+  <!-- you will need to the href to point to your root directories css file -->
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+
+<div id="list">
+  <ol>
+    <li>apple</li>
+    <li>orange</li>
+    <li>banana</li>
+    <li>pear</li>
+    <li>mango</li>
+  </ol>
+</div>
+<div id="tbl"></div>
+<script>
+
+    document.getElementById('tbl').innerHTML = "<h1>Shopping List</h1>" +
+    "<table class=\"tbl\">" +
+    "<thead>" +
+    "<tr>" +
+    "<th>List Item(s)</th>" +
+    "</tr>" +
+    "</thead>"  +
+		"<tr><td>1</td><td>apple</td>" +
+		"<tr><td>2</td><td>orange</td>" +
+		"<tr><td>3</td><td>banana</td>" +
+		"<tr><td>4</td><td>pear</td>" +
+    "<tr><td>5</td><td>mango</td>" +
+		"</table>"
+  </script>
+
+
+</body>
+</html>
+

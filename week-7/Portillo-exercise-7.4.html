@@ -1,0 +1,37 @@
+<!--
+============================================
+ Title:  Inline Java Script Function-7.4.js
+ Modified By: Wendy Portillo
+ Date:   July 10, 2019
+ Description: Inline Java Script Function
+===========================================
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Assignment 7.4</title>
+	<link rel="stylesheet" media="all" href="../site.css">
+	<script src="../header2.js"></script>
+</head>
+<body>
+	<script>
+		document.write(header("Wendy", "Portillo", "Exercise 7.4") + '\n');
+	</script>
+	<div id="name"></div>
+	<div id="tbl"></div>
+	<script>
+		document.getElementById('tbl').innerHTML = "<h1>Computer Components</h1>" +
+		"<table class=\"tbl\">" +
+		"<thead><td>Id</td><td>Name</td><td>Amount</td><td colspan=\"2\">Functions</td></thead>" +
+		"<tr><td>1</td><td>Laptop</td><td>1,500.99</td><td><a href=\"javascript:alert('1');\">Edit</a></td><td><a href=\"javascript:alert('Are you sure?');\">Delete</a></td>" +
+		"<tr><td>2</td><td>Motherboard</td><td>35.70</td><td><a href=\"javascript:alert('2');\">Edit</a></td><td><a href=\"javascript:alert('Are you sure?');\">Delete</a></td>" +
+		"<tr><td>3</td><td>Monitor</td><td>174.99</td><td><a href=\"javascript:alert('3');\">Edit</a></td><td><a href=\"javascript:alert('Are you sure?');\">Delete</a></td>" +
+		"<tr><td>4</td><td>Mouse</td><td>13.99</td><td><a href=\"javascript:alert('4');\">Edit</a></td><td><a href=\"javascript:alert('Are you sure?');\">Delete</a></td>" +
+		"<tr><td>5</td><td>Keyboard</td><td>14.50</td><td><a href=\"javascript:alert('5');\">Edit</a></td><td><a href=\"javascript:alert('Are you sure?');\">Delete</a></td>" +
+		"</table>"
+	</script>
+</body>
+</html>

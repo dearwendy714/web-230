@@ -1,0 +1,64 @@
+.tbl {
+	border-collapse:collapse;
+}
+.tbl thead td {
+	background-color: #5d86bd;
+	color: #fff;
+	font-weight: 700
+}
+.tbl td{
+	padding:7px; border:#dbdbdb 1px solid;
+}
+.tbl tr{
+	background: #fff;
+}
+/*  Define the background color for all the ODD background rows  */
+.tbl tr:nth-child(odd){
+	background: #FFF;
+}
+/*  Define the background color for all the EVEN background rows  */
+.tbl tr:nth-child(even){
+	background: #c4d8f3;
+}
+
+/* Accordion (Dropdown) */
+.accordian-wrapper {
+	box-shadow: 0px 0px 5px -4px #000;
+	border: 1px solid #FFF;
+  	margin-bottom: .75em;
+}
+
+button.accordion {
+  background-color: #F8F8F8;
+  border: none;
+  font-size: 1.25em;
+  cursor: pointer;
+  outline: none;
+  padding: .5em 1.25em;
+  text-align: left;
+  transition: 0.8s;
+  width: 100%;
+}
+
+button.active, button.accordion:hover {
+  background-color: #D5E9CD;
+  color: #336633;
+}
+
+button.accordion:after {
+  content: '\002B';
+  float: right;
+}
+
+button.active.accordion:after{
+  content: "\2212";
+}
+
+.details {
+  background-color: #EFFAEA;
+  color: #336633;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 1.5em;
+  transition: max-height 0.2s ease-out;
+}
