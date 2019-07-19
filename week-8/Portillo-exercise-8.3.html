@@ -1,0 +1,79 @@
+<!---
+============================================
+ Title:  Discussion Board-8.3.js
+ Modified By: Wendy Portillo
+ Date:   July 17, 2019
+ Description: jQuery
+===========================================
+--->
+<script type="text/javascript">
+function display(firstName, lastName, assignment) {
+	let output = '\n' + firstName + ' ' + lastName + '\n' + assignment + '\nDate: ' +
+	new Date().toLocaleDateString('en-US')
+
+	return output
+}
+
+// Outputs the header to the console
+console.log(display("Wendy", "Portillo", "Exercise 8.2") + '\n');
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Click</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+  <div class="top-bar">Toggle Hello / Fruit Table</div>
+  <h1>Hello</h1>
+  <p title="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar lacus eget sem mattis, sed varius mi facilisis. Pellentesque nec lacus risus. Cras ac pellentesque quam. Quisque nec lobortis nibh. Aliquam venenatis odio vitae ex eleifend, ac eleifend diam sollicitudin. Vivamus quis orci quis augue commodo tempor. Donec urna nisi, ornare id lacinia eget, accumsan eu ligula. Donec nec elit ac ipsum tempus tristique vitae eget arcu.</p>
+  <button type="button">Toggle</button>
+  <script>
+    $(document).ready(function(){
+      $("button").click(function(){
+        $("p").toggle();
+      });
+    });
+    </script>
+    <br></br>
+    <div id="fruits"></div>
+    <table>
+    <tr>
+        <tr class="d0">
+        <td><a href="#" class="fruits">1</a></td>
+        <td>apple</td>
+    </tr>
+    <tr>
+        <td><a href="#" class="fruits">2</a></td>
+        <td>oranges</td>
+    </tr>
+    <tr class="d1">
+        <td><a href="#" class="fruits">3</a></td>
+        <td>pear</td>
+    </tr>
+    <tr>
+        <td><a href="#" class="fruits">4</a></td>
+        <td>strawberries</td>
+    </tr>
+    <tr class="d2">
+        <td><a href="#" class="fruits">5</a></td>
+        <td>kiwi</td>
+    </tr>
+</table>
+<script>
+
+    $(function () {
+        $(".fruits").click(function (event) {
+            event.preventDefault();
+            var fruits = $(this).text();
+            var fruitsType = $(this).closest("td").next().text();
+            alert("{fruits_id: " + fruits + ", fruits_type: " + fruitsType + "}");
+        });
+    });
+</script>
+</body>
+</html>
