@@ -1,0 +1,57 @@
+<!---
+============================================
+ Title:  Discussion Board-8.2.js
+ Modified By: Wendy Portillo
+ Date:   July 17, 2019
+ Description: Dynamic HTML
+===========================================
+--->
+<script type="text/javascript">
+function display(firstName, lastName, assignment) {
+	let output = '\n' + firstName + ' ' + lastName + '\n' + assignment + '\nDate: ' +
+	new Date().toLocaleDateString('en-US')
+
+	return output
+}
+
+// Outputs the header to the console
+console.log(display("Wendy", "Portillo", "Exercise 8.2") + '\n');
+</script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 8.2</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="../site.css">
+
+  </style>
+</head>
+<body>
+
+<div class="top-bar">ID / Type</div>
+<div id="fruits"></div>
+
+<script>
+  var fruit = [
+    {
+      id: "1",
+      type: "apple" },
+    {
+      id: "2",
+      type: "orange" },
+  ]
+  var out = "<h2>Fruits</h2><ul>";
+    for (var x = 0; x < fruit.length; x++) {
+        out += "<ul>" + fruit[x].id + " " + fruit[x].type + "</ul>";
+    }
+    out += "</ul>";
+  document.getElementById('fruits').innerHTML = out;
+</script>
+
+</body>
+</html>
+
+
+
