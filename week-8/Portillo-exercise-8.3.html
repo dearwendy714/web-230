@@ -25,11 +25,70 @@ console.log(display("Wendy", "Portillo", "Exercise 8.2") + '\n');
     <title>jQuery Click</title>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="../site.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./site.css">
+    <style type="text/css">
 
-  <h1>Hello</h1>
+
+        .hi {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+        }
+
+        .body {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 300;
+        }
+        .para, .toggle, table {
+          font-family: 'Roboto', sans-serif;
+          margin-top: 20px;
+          margin-left: 20px;
+
+
+        }
+
+
+        .top-bar {
+          font-family: 'Roboto', sans-serif;
+          font-weight: 500;
+
+
+        }
+
+        section {
+          width:50%;
+          float: left;
+        }
+
+        .top-bar2 {
+          background-color: #5d86bd;
+          padding: 10px 20px;
+          font-family: 'Roboto', sans-serif;
+
+        }
+
+        tr.d0 td {
+          background-color: beige;
+          color: black;
+        }
+
+        tr.d1 td {
+          background-color: beige;
+          color: black;
+        }
+
+        tr.d2 td {
+          background-color: beige;
+          color: black;
+        }
+
+
+
+</style>
+
+</head>
+<body class="body">
+
+  <h1 class="hi">Hello</h1>
   <p title="para">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar lacus eget sem mattis, sed varius mi facilisis. Pellentesque nec lacus risus. Cras ac pellentesque quam. Quisque nec lobortis nibh. Aliquam venenatis odio vitae ex eleifend, ac eleifend diam sollicitudin. Vivamus quis orci quis augue commodo tempor. Donec urna nisi, ornare id lacinia eget, accumsan eu ligula. Donec nec elit ac ipsum tempus tristique vitae eget arcu.</p>
   <button type="button">Toggle</button>
   <script>
