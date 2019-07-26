@@ -16,9 +16,14 @@ var header = require("../header.js");
 
 
 // Outputs the header to the console
-console.log(header.display("Wendy", "Portillo", "Exercise 5.4") + '\n');
 
-// Start program
+// Load additional JavaScript file
+var header = require("../header.js");
+
+// Output Header Display
+console.log(header.display("Wendy", "Portillo", "Discussion Board 5-solution1") + "\n");
+
+// Start program// Start program
 
 const animals = ['Hen', 'elephant', 'llama', 'leopard', 'ostrich', ' ', 'Whale',
                  'octopus', 'rabbit', 'lion', 'dog']
