@@ -1,0 +1,42 @@
+<!---
+============================================
+ Title:  Discussion-Solution8.2.html
+ Author: Justin Singleton
+ Modified By: Wendy Portillo
+ Date:    22 July 2019
+ Description: Discussion-DOM Manipulation jQuery (find two errors)
+===========================================
+--->
+<script type="text/javascript">
+  function display(firstName, lastName, assignment) {
+    let output = '\n' + firstName + ' ' + lastName + '\n' + assignment + '\nDate: ' +
+    new Date().toLocaleDateString('en-US')
+
+    return output
+  }
+
+  // Outputs the header to the console
+  console.log(display("Wendy", "Portillo", "Discussion Board 8-solution2") + '\n');
+  </script>
+
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <title>Assignment 8.1</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script>
+
+          function alertMessage() {   // they were jq function when they were not
+            alert("Hello, There")
+          }
+          function alertMessage1() {
+            alert("Hi Friends")
+            }
+        </script>
+      </head>
+      <body>
+          <h1>Click the button for a message.</h1>
+          <button onclick="alertMessage()">Press Here</button>
+          <button onclick="alertMessage1()">Press Here also</button>
+      </body>
+    </html>

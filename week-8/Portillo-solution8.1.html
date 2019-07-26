@@ -1,0 +1,52 @@
+<!---
+============================================
+ Title:  Discussion-Solution8.1.html
+ Author: w3Schools.com
+ Modified By: April Auger
+ Date:   17 July 2019
+ Description: Program utilizes jQuery to display and hide a p tag.
+                     There are three errors.
+===========================================
+--->
+<script type="text/javascript">
+  function display(firstName, lastName, assignment) {
+    let output = '\n' + firstName + ' ' + lastName + '\n' + assignment + '\nDate: ' +
+    new Date().toLocaleDateString('en-US')
+
+    return output
+  }
+
+  // Outputs the header to the console
+  console.log(display("Wendy", "Portillo", "Discussion Board 8-solution1") + '\n');
+  </script>
+  <html>
+
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Discussion Board 8.1</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+
+      <body>
+      <script>
+        $(document).ready(function () {
+          $("#hide").click(function () { //change from on.click to .click
+            $("p").hide();
+          });
+          $("#show").click(function () { // change id into show different names
+            $("p").show();
+          });
+        });
+      </script>
+
+      <p>If you click on the "Hide" button, I will disappear.</p>
+
+      <button id="hide">Hide</button>
+      <button id="show">Show</button>
+    </body>
+    </html>
