@@ -1,11 +1,24 @@
 /*
 ============================================
-; Title:  hughes-6.1.js
+; Title:  Assignment 6.1
 ; Author: Joshua Hughes
+; Modified By: Wendy Portillo (Found and corrected errors)
 ; Date:   2 July 2019
-; Description: Demonstrates objects
+; Description: A simple program to demonstrate
+;			   how to create objects and assign
+;			   properties to the object. This
+;			   program has multiple errors that need
+;			   to be corrected before it will run.
 ;===========================================
 */
+
+// Load additional JavaScript file
+var header = require("../header.js");
+
+// Output Header Display
+console.log(header.display("Wendy", "Portillo", "Discussion Board 6-solution1") + "\n");
+
+// Start program
 
 //global variable definitions
 
@@ -36,8 +49,8 @@ const studentEntries = Object.entries(student);
 const personEntries = Object.entries(person);
 const courseEntries = Object.entries(course);
 
-//output
-for (var [property, value] for (studentEntries); {
+//output //change incorrect "for each" into "for of" also change the closing )
+for (var [property, value] of (studentEntries)) {
   if (property == "personalInfo") {
     console.log("person:");
 
