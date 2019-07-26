@@ -1,0 +1,53 @@
+<!---
+============================================
+; Title: Assignment 1.1
+; Author: Nathaniel D. Liebhart
+; Date:30 May 2019
+; Modified By: Wendy Portillo
+; Description: This program demonstrates the
+ use of JavaScript values and variables, that includes two errors.
+ ===========================================
+ --->
+
+ <script type="text/javascript">
+  function display(firstName, lastName, assignment) {
+    let output = '\n' + firstName + ' ' + lastName + '\n' + assignment + '\nDate: ' +
+    new Date().toLocaleDateString('en-US')
+
+    return output
+  }
+
+  // Outputs the header to the console
+  console.log(display("Wendy", "Portillo", "Discussion Board 1-solution1") + '\n');
+  </script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mistakes</title>
+</head>
+<body>
+  <p id="nums"></p>
+  <!-- this button is used to run the runPrint() sort function -->
+  <button onclick="runPrint()">Sort Numbers</button>
+
+  <script>
+    var numbers = [
+      1, 107, 96, 53, 6
+    ];
+    // This will display the numbers array in the paragraph with the id of nums
+    document.getElementById("nums").innerHTML = (numbers + " ");
+    // this function is used to sort the array of numbers
+    function runPrint() {
+      numbers.sort(function(a,b){
+         return a - b
+      });
+      // this will display the sorted array in the paragraph with the id of nums
+      document.getElementById("nums").innerHTML = (numbers + " ");
+    }
+  </script>
+</body>
+</html>
