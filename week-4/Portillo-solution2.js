@@ -15,7 +15,7 @@
 var header = require("../header.js");
 
 // Output Header Display
-console.log(header.display("Wendy", "Portillo", "Discussion Board 4.1") + "\n");
+console.log(header.display("Wendy", "Portillo", "Discussion Board 4-solution2") + "\n");
 
 // Start program
 
