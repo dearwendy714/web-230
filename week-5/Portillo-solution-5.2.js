@@ -11,6 +11,14 @@
 ;===========================================
 */
 
+// Load additional JavaScript file
+var header = require("../header.js");
+
+
+// Outputs the header to the console
+console.log(header.display("Wendy", "Portillo", "Discussion Board 5-solution2") + "\n");
+// Start program
+
 // Start program
 
 // Restaurants array
